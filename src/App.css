@@ -1,0 +1,84 @@
+/* temp styles
+  todo: remove all, use styled components
+*/
+
+*{
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.items-container{
+  width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px black;
+  text-decoration: none;
+  list-style: none;
+}
+
+.item{
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.item-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.item-title{
+  width: 100%;
+  padding: 10px;
+}
+
+.remove-button{
+  width: 50px;
+  padding: 10px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(85, 41, 41, 0.61);
+  cursor: pointer
+}
+
+.remove-button:hover{
+  background-color: rgba(85, 41, 41, 0.8);
+}
+
+.item-content{
+  padding: 50px 10px 10px;
+  position: relative;
+}
+
+.edit-button{
+  width: 50px;
+  padding: 10px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: rgba(40, 81, 141, 0.5);
+  cursor: pointer;
+}
+
+.edit-button:hover{
+  background-color: rgba(40, 81, 141, 0.8);
+}
+
+.item-content-edit{
+  display: flex;
+  flex-direction: column;
+}
+
+.item-content-edit textarea{
+  margin: 10px 0;
+  height: 40px;
+}
