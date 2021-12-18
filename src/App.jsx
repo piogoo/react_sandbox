@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import './App.css';
 import { addItem, getData, removeItem, saveItem } from './http/mock.js';
 import ItemsBlock from './components/ItemsBlock/index';
-import FormBlock from './components/FormBlock';
+import FormBlock from './components/FormBlock/index';
 
 const App = () => {
   const [items, setItems] = useState([]);

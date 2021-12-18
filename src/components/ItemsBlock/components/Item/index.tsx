@@ -1,16 +1,17 @@
 import React, { useCallback, useEffect, useState } from "react";
+import { ItemProps } from "./index.props";
 
 /**
  * todo: decompose
  */
-const Item = ({item, onItemRemove, onSaveItem}) => {
+const Item: React.FC<ItemProps> = ({item, onItemRemove, onSaveItem}) => {
     const [opened, setOpened] = useState(false);
     const [showEdit, setShowEdit] = useState(false);
     const [title, setTitle] = useState(item.title);
-    const [description, setDescription] = useState(item.description);
+    const [description, setDescription]= useState(item.description);
 
     const handleSaveItem = useCallback(async () => {
-        const newItem = {...item, title, description};
+        const newItem: any = {...item, title, description};
         await onSaveItem(newItem);
         setShowEdit(false);
     }, [description, item, onSaveItem, title]);

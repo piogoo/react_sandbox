@@ -1,7 +1,8 @@
 import React from 'react';
 import Item from './components/Item';
+import { ItemsBlockProps } from './index.props';
 
-const ItemsBlock = ({
+const ItemsBlock: React.FC<ItemsBlockProps> = ({
     items,
     onItemRemove,
     onSaveItem,
